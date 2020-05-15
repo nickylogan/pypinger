@@ -1,8 +1,9 @@
 import argparse
 import datetime as dt
+
 import matplotlib as mpl
-import matplotlib.pyplot as plt
 import matplotlib.animation as animation
+import matplotlib.pyplot as plt
 from matplotlib.figure import Axes
 from matplotlib.ticker import MaxNLocator
 from pythonping import ping
