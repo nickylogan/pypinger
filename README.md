@@ -1,4 +1,4 @@
-# Pinger
+# PyPinger
 
 A simple python command-line tool to graph real-time ping latency. I just made this tool for fun. Feel free to clone the repository for use.
 
