@@ -10,6 +10,8 @@ from pythonping import ping
 # comment out this line if you wanna show them.
 mpl.rcParams['toolbar'] = 'None'
 
+plt.style.use('dark_background')
+
 
 class Pinger:
     TIMEOUT = 2000  # default timeout (in ms)
@@ -56,8 +58,9 @@ class PingPlotter:
         self.__update_data()
 
         self.ax.clear()
-        self.ax.grid(True)
-        self.ax.plot_date(self.timestamps, self.rtts, 'b-')
+        self.ax.grid(True, ls='--', lw=0.25)
+        self.ax.plot_date(self.timestamps, self.rtts,
+                          linestyle='solid', ds='steps', marker='None')
 
         host = self.pinger.host
         plt.title('Latency over time to {}'.format(host))
