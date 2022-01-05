@@ -2,3 +2,4 @@
 
 matplotlib == 3.1.3
 pythonping == 1.0.10
+pytk == 0.0.2.1
